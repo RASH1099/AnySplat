@@ -1,13 +1,15 @@
 import json
 import os
 from typing import Any, Dict, List, Optional
-
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
 import cv2
 import imageio.v2 as imageio
 import numpy as np
 import torch
 from PIL import Image
-from pycolmap import SceneManager
+from .scene_manager import SceneManager
 from tqdm import tqdm
 from typing_extensions import assert_never
 
